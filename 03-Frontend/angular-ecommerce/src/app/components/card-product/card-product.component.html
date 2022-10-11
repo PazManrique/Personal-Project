@@ -1,4 +1,6 @@
-<div *ngFor="let tempProduct of products">
+<div class="container-fluid">
+  <div class="row">
+<div *ngFor="let tempProduct of products" class="col-md-3">
 <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -18,4 +20,6 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
+</div>
+</div>
 </div>
