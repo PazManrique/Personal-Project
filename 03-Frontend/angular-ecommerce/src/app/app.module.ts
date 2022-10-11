@@ -11,9 +11,13 @@ import { CardProductComponent } from './components/card-product/card-product.com
 import {MatCardModule} from '@angular/material/card';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { Routes } from '@angular/router';
 
 
+const routes: Routes = [
+{path: 'products/:id', component: ProductDetailsComponent },
 
+]
 
 
 @NgModule({
