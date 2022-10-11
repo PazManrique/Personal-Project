@@ -12,6 +12,8 @@ import {MatCardModule} from '@angular/material/card';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { CategoryBarComponent } from './components/category-bar/category-bar.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,7 @@ const routes: Routes = [
     CardProductComponent,
     NavBarComponent,
     ProductDetailsComponent,
+    CategoryBarComponent,
     
    
   ],
@@ -37,6 +40,7 @@ const routes: Routes = [
     MatSliderModule,
     BrowserAnimationsModule,
     MatCardModule,
+    RouterModule.forRoot(routes)
    
   ],
   providers: [ProductService],

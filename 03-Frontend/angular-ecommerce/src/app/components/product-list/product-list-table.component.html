@@ -2,6 +2,7 @@
     <thead class="table-dark">
         <tr>
             <th></th>
+            <th>Id</th>
             <th>Name</th>
             <th>Price</th>
             <th>Units in Stock</th>
@@ -10,8 +11,10 @@
     <tbody>
         <tr *ngFor="let tempProduct of products">
             <td class="align-middle" >
-                <img src="{{tempProduct.imageUrl}}" height="50"/>
+                <a routerLink = "/products/{{tempProduct.id}}">
+                <img src="{{tempProduct.imageUrl}}" height="50"/></a>
             </td>
+            <td class="align-middle">{{tempProduct.id}}</td>
             <td class="align-middle">{{tempProduct.name}}</td>
             <td class="align-middle">{{tempProduct.unitPrice | currency:'USD'}}</td>
             <td class="align-middle">{{tempProduct.unitsInStock}}</td>
